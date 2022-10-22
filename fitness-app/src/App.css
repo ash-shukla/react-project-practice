@@ -80,6 +80,12 @@ body {
   height: 326px;
 }
 
+.exercise-desc :hover {
+  color: black;
+  font-weight: bolder;
+  scale: 125px;
+}
+
 .bodyPart-card {
   transform: scale(1, 1);
   transition: 0.3s all ease-in-out;

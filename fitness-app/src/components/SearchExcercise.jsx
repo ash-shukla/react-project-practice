@@ -5,7 +5,7 @@ import HorizontalScrollBar from "./HorizontalScrollBar";
 
 const SearchExcercise = ({ ...props }) => {
   const { bodyPart, setbodyPart, setExcercises } = props;
-  const [search, setsearch] = useState("");
+  const [search, setSearch] = useState("");
   const [bodyParts, setBodyParts] = useState([]);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const SearchExcercise = ({ ...props }) => {
         "https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
         excerciseOptions
       );
-      setBodyParts(["all", ...bodyPartData]);
+      setBodyParts([...bodyPartData]);
     };
     fetchExcerciseList();
   }, []);
@@ -25,15 +25,17 @@ const SearchExcercise = ({ ...props }) => {
         "https://exercisedb.p.rapidapi.com/exercises",
         excerciseOptions
       );
-      const searchedExcercises = excerciseData.filter((x) => {
-        x.name.toLowerCase().includes(search) ||
+      const searchedExcercises = excerciseData.filter(
+        (x) =>
+          x.name.toLowerCase().includes(search) ||
           x.target.toLowerCase().includes(search) ||
           x.equipment.toLowerCase().includes(search) ||
-          x.bodyPart.toLowerCase().includes(search);
-      });
-      setsearch("");
+          x.bodyPart.toLowerCase().includes(search)
+      );
+      setSearch("");
+      console.log("searchedExcercises", searchedExcercises);
       setExcercises(searchedExcercises);
-      console.log(excerciseData);
+      // console.log(excerciseData);
     }
   };
 
@@ -52,7 +54,7 @@ const SearchExcercise = ({ ...props }) => {
         <TextField
           sx={{ width: { lg: "1006px", xs: "350px" } }}
           value={search}
-          onChange={(e) => setsearch(e.target.value.toLowerCase())}
+          onChange={(e) => setSearch(e.target.value.toLowerCase())}
           placeholder="Search Excercise"
         />
         <Button
