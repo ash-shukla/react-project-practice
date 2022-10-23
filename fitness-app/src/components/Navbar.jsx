@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/images/Logo.png";
 
 const Navbar = () => {
+  const scrollDown = () => {
+    window.scrollTo(0, 1730);
+  };
   return (
     <Stack
       direction="row"
@@ -24,6 +27,7 @@ const Navbar = () => {
       </Link>
       <Stack direction="row" gap="40px" fontSize="24px" alignItems="flex-end">
         <Link
+          to="/"
           style={{
             textDecoration: "none",
             color: "#3A1212",
@@ -33,6 +37,7 @@ const Navbar = () => {
           Home
         </Link>
         <a
+          onClick={scrollDown}
           href="#excercise"
           style={{ textDecoration: "none", color: "#3A1212" }}
         >

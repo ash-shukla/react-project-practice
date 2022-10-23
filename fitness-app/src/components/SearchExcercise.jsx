@@ -1,4 +1,11 @@
-import { Box, Button, Stack, TextField, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Skeleton,
+  Stack,
+  TextField,
+  Typography,
+} from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { excerciseOptions, fetchData } from "../utils/fetchData";
 import HorizontalScrollBar from "./HorizontalScrollBar";
@@ -35,7 +42,7 @@ const SearchExcercise = ({ ...props }) => {
       setSearch("");
       console.log("searchedExcercises", searchedExcercises);
       setExcercises(searchedExcercises);
-      // console.log(excerciseData);
+      console.log(excerciseData);
     }
   };
 
