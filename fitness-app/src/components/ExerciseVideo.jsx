@@ -6,7 +6,7 @@ const ExerciseVideo = ({ exerciseVideos, name }) => {
     <Box sx={{ marginTop: { lg: "100px", xs: "20px" } }} p="20px">
       <Typography
         variant="h3"
-        sx={{ fontSize: { xs: "20px" } }}
+        sx={{ fontSize: { xs: "20px", lg: "45px" } }}
         mb="33px"
         fontWeight={500}
       >
@@ -22,7 +22,7 @@ const ExerciseVideo = ({ exerciseVideos, name }) => {
         alignItems="center"
         sx={{
           flexDirection: { lg: "row" },
-          ml: { lg: "7%" },
+          ml: { lg: "7%", xs: "10px" },
           gap: { lg: "100px", xs: "0" },
         }}
       >
@@ -39,13 +39,17 @@ const ExerciseVideo = ({ exerciseVideos, name }) => {
               alt={item.video.channelName}
             />
             <Box>
-              <Typography variant="h5" fontSize="18px" color="#000">
+              <Typography
+                variant="h5"
+                sx={{ fontSize: { lg: "18px", xs: "14px" } }}
+                color="#000"
+              >
                 {item.video.title}
               </Typography>
               <Typography
                 variant="h6"
                 fontWeight={600}
-                fontSize="14px"
+                sx={{ fontSize: { lg: "14px", xs: "12px" } }}
                 color="#000"
               >
                 {item.video.channelName}

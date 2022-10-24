@@ -40,9 +40,7 @@ const SearchExcercise = ({ ...props }) => {
           x.bodyPart.toLowerCase().includes(search)
       );
       setSearch("");
-      console.log("searchedExcercises", searchedExcercises);
       setExcercises(searchedExcercises);
-      console.log(excerciseData);
     }
   };
 

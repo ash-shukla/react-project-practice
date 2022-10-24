@@ -6,7 +6,13 @@ import LeftIcon from "../assets/icons/left-arrow.png";
 import RightIcon from "../assets/icons/right-arrow.png";
 
 const HorizontalScrollBar = ({ ...props }) => {
-  const { bodyParts, bodyPart, setBodyPart } = props;
+  const {
+    bodyParts,
+    bodyPart,
+    setBodyPart,
+    targetMuscleExercies,
+    isCalledFromSimilar,
+  } = props;
 
   const LeftArrow = () => {
     const { scrollPrev } = useContext(VisibilityContext);
@@ -25,13 +31,20 @@ const HorizontalScrollBar = ({ ...props }) => {
     );
   };
 
+  const horizontalScrollData = () => {
+    if (isCalledFromSimilar) {
+      return [targetMuscleExercies];
+    }
+    return [bodyParts];
+  };
+
   return (
     <ScrollMenu
       className="scroll-x"
       LeftArrow={LeftArrow}
       RightArrow={RightArrow}
     >
-      {bodyParts.map((item) => (
+      {bodyPart.map((item) => (
         <Box
           key={item.id || item}
           itemId={item.id || item}
