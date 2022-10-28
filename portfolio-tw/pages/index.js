@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import Landing from "./Landing";
+import Services from "./Services";
 
 export default function Home() {
   return (
@@ -27,6 +29,10 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <Landing />
+          <section>
+            <Services />
+          </section>
         </section>
       </main>
     </div>
