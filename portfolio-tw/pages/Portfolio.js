@@ -10,8 +10,8 @@ import web6 from "../public/web6.png";
 const Portfolio = () => {
   return (
     <div>
-      <h3 className="text-3xl py-1 darkModeText">Portfolio</h3>
-      <p className="font-normal text-lg py-2 leading-8 text-gray-800 darkModeText">
+      <h3 className="lg:text-3xl text-2xl py-1 darkModeText">Portfolio</h3>
+      <p className="font-normal lg:text-lg text-base py-2 leading-8 text-gray-800 darkModeText">
         Since the beginning of my journey as a freelancer developer, I have done
         remote work for
         <span className="text-teal-500"> Agencies </span>
@@ -19,7 +19,7 @@ const Portfolio = () => {
         and collaborated with talented people to create digital products for
         both business and consumer use.
       </p>
-      <p className="text-lg  py-2 leading-8 text-gray-800 darkModeText">
+      <p className="lg:text-lg text-base  py-2 leading-8 text-gray-800 darkModeText">
         I offer wide range of services, including brand design, programming and
         teaching
       </p>
