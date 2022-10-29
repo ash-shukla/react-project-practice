@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+import pro1 from "../public/pro1.png";
+import pro2 from "../public/pro2.png";
+import pro3 from "../public/pro3.png";
+import pro4 from "../public/pro4.png";
+import pro5 from "../public/pro5.png";
+import pro6 from "../public/pro6.png";
+import PortfolioCard from "./PortfolioCard";
 
 const Portfolio = () => {
   return (
@@ -24,54 +25,12 @@ const Portfolio = () => {
         teaching
       </p>
       <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-        <div className="basis-1/3 flex-1">
-          <Image
-            src={web1}
-            className="rounded-lg object-cover"
-            width={"100%"}
-            height={"100%"}
-          />
-        </div>
-        <div className="basis-1/3 flex-1">
-          <Image
-            src={web2}
-            className="rounded-lg object-cover"
-            width={"100%"}
-            height={"100%"}
-          />
-        </div>
-        <div className="basis-1/3 flex-1">
-          <Image
-            src={web3}
-            className="rounded-lg object-cover"
-            width={"100%"}
-            height={"100%"}
-          />
-        </div>
-        <div className="basis-1/3 flex-1">
-          <Image
-            src={web4}
-            className="rounded-lg object-cover"
-            width={"100%"}
-            height={"100%"}
-          />
-        </div>
-        <div className="basis-1/3 flex-1">
-          <Image
-            src={web5}
-            className="rounded-lg object-cover"
-            width={"100%"}
-            height={"100%"}
-          />
-        </div>
-        <div className="basis-1/3 flex-1">
-          <Image
-            src={web6}
-            className="rounded-lg object-cover"
-            width={"100%"}
-            height={"100%"}
-          />
-        </div>
+        <PortfolioCard img={pro1} />
+        <PortfolioCard img={pro2} />
+        <PortfolioCard img={pro3} />
+        <PortfolioCard img={pro4} />
+        <PortfolioCard img={pro5} />
+        <PortfolioCard img={pro6} />
       </div>
     </div>
   );
