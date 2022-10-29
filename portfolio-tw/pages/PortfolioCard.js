@@ -3,7 +3,7 @@ import React from "react";
 
 const PortfolioCard = (props) => {
   return (
-    <div className="basis-1/3 flex-1">
+    <div className="basis-1/3 flex-1 cursor-pointer hover:scale-110">
       <Image
         src={props?.img}
         className="rounded-lg h-[14rem] w-full lg:h-[18rem] "

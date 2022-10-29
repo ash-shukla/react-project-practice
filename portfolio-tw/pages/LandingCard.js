@@ -1,11 +1,13 @@
 import Image from "next/image";
 import React from "react";
 
-const LandingCard = (props) => {
+const LandingCard = ({ img }) => {
   return (
-    <div className=" text-center shadow-2xl lg:p-6 p-10 rounded-2xl lg:my-6 my-10 darkModeCard lg:w-[24rem] lg:h-[36rem] ">
+    <div
+      className={` text-center shadow-2xl lg:p-6 p-10 rounded-2xl lg:my-6 my-10 lightModeCard  lg:w-[24rem] lg:h-[36rem] `}
+    >
       <div className="ml-[3.5rem] lg:ml-[6.5rem] w-[140px] ">
-        <Image className="" src={props?.img} width={"100%"} height={"100%"} />
+        <Image className="" src={img} width={"100%"} height={"100%"} />
       </div>
       <h3 className="lg:text-xl text-base font-semibold pt-8 pb-2 ">
         Beautiful Design
