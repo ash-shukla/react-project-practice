@@ -35,9 +35,10 @@ export default function Home() {
               </li>
               <li className="hover:scale-110">
                 <a
+                  rel="noreferrer"
                   target={"_blank"}
                   className=" bg-gradient-to-r cursor-pointer from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="resume-updated.pdf"
+                  href="resume.pdf"
                 >
                   Resume
                 </a>
