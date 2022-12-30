@@ -9,6 +9,7 @@ import morgan from "morgan";
 import path from "path";
 import { fileURLToPath } from "url";
 import { register } from "./controllers/auth.js";
+import authRoutes from "./routes/auth.js";
 
 // CONFIGURATIONS //
 const __filename = fileURLToPath(import.meta.url);
@@ -35,8 +36,11 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-// API WITH FILES
+// API WITH FILES //
 app.post("/api/register", upload.single("picture"), register);
+
+// ROUTES //
+app.use("/api", authRoutes);
 
 // MONGOOSE SETUP //
 const PORT = process.env.PORT || 6001;
