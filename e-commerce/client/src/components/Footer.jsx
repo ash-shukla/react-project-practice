@@ -22,19 +22,21 @@ const Footer = () => {
         <div className="item">
           <h1>About</h1>
           <span>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut,
-            quaerat error voluptas unde perferendis sequi quam velit officiis
-            eum rerum dolorum maxime voluptatem repellendus provident
-            architecto, inventore perspiciatis possimus quisquam?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. lorem
+            Magna laboriosam doloremque distinctio autem necessitatibus
+            veritatis ullam alias, commodi laborum eum amet laudantium qui
+            minima! Perferendis, ratione aliquam voluptas nihil tempore atque ex
+            dolor saepe, quaerat velit, numquam minus asperiores modi!
           </span>
         </div>
         <div className="item">
           <h1>Contact</h1>
           <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quidem
-            quaerat officia totam blanditiis consequatur dicta unde, nam facilis
-            nemo fugit debitis delectus, ad consequuntur ullam aliquam autem
-            reprehenderit voluptatem.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. lorem
+            Magnam laboriosam doloremque distinctio autem necessitatibus
+            veritatis ullam alias, commodi laborum eum amet laudantium qui
+            minima! Perferendis, ratione aliquam voluptas nihil tempore atque ex
+            dolor saepe, quaerat velit, numquam minus asperiores modi!
           </span>
         </div>
       </div>
