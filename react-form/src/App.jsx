@@ -10,11 +10,11 @@ function App() {
     password: "",
     confirmPassword: "",
   });
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const data = new FormData(e.target);
-  //   console.log(Object.fromEntries(data.entries()));  // THIS IS AN IMPORTANT WAY OF HANDLING FORM DATA
-  // };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = new FormData(e.target);
+    console.log(Object.fromEntries(data.entries())); // THIS IS AN IMPORTANT WAY OF HANDLING FORM DATA
+  };
 
   const inputs = [
     {
@@ -68,7 +68,7 @@ function App() {
     },
   ];
 
-  const handleSubmit = () => {};
+  // const handleSubmit = () => {};
   const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };

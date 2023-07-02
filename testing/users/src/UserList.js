@@ -1,11 +1,12 @@
 import React from "react";
 
 const UserList = ({ users }) => {
-  const renderedUsers = users?.map((user) => {
+  console.log(users);
+  const renderedUser = users?.map((x) => {
     return (
-      <tr key={user.name}>
-        <td>{user.name}</td>
-        <td>{user.email}</td>
+      <tr key={x.name}>
+        <td>{x.name}</td>
+        <td>{x.email}</td>
       </tr>
     );
   });
@@ -17,7 +18,7 @@ const UserList = ({ users }) => {
           <th>Email</th>
         </tr>
       </thead>
-      <tbody>{renderedUsers}</tbody>
+      <tbody data-testid="users">{renderedUser}</tbody>
     </table>
   );
 };
