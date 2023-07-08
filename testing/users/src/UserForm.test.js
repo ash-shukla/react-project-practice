@@ -53,3 +53,20 @@ test("It calls onUserAdd when the form is submitted", async () => {
     email: "ashish@ashish.com",
   });
 });
+
+// test("resets the two inputs when the form is submitted", () => {
+//   render(<UserForm onUserAdd={() => {}} />);
+
+//   const nameInput = screen.getByRole("textbox", { name: /name/i });
+//   const emailInput = screen.getByRole("textbox", { name: /email/i });
+//   const button = screen.getByRole("button");
+
+//   user.click(nameInput);
+//   user.keyboard("Ashish");
+//   user.click(emailInput);
+//   user.keyboard("ashish@ashish.com");
+//   user.click(button);
+
+//   expect(nameInput).toHaveValue("");
+//   expect(emailInput).toHaveValue("");
+// });

@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import user from "@testing-library/user-event";
 import App from "./App";
+import UserForm from "./UserForm";
 
 test("can receive a new user and show it in the list", async () => {
   render(<App />);
