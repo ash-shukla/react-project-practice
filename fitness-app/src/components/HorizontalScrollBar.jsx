@@ -44,7 +44,7 @@ const HorizontalScrollBar = ({ ...props }) => {
       LeftArrow={LeftArrow}
       RightArrow={RightArrow}
     >
-      {bodyPart.map((item) => (
+      {bodyPart?.map((item) => (
         <Box
           key={item.id || item}
           itemId={item.id || item}
