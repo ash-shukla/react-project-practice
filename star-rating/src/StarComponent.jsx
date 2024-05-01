@@ -6,7 +6,7 @@ const StarComponent = () => {
   const [hover, setHover] = useState(0);
 
   return (
-    <div>
+    <div className="container">
       {[...Array(5)].map((x, i) => {
         const ratingVal = i + 1;
         return (
