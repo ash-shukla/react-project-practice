@@ -86,3 +86,56 @@
   font-weight: bold;
   margin-top: 10px;
 }
+/* ============ Tree structure styles ===================*/
+
+.nodes {
+  list-style: none;
+}
+
+.nodes li a {
+  color: #0097e6;
+  text-decoration: none;
+}
+
+.nodes li a:hover {
+  text-decoration: underline;
+}
+
+.node .label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.node .label span {
+  line-height: 0;
+  cursor: pointer;
+}
+
+/*======================= Interactive Shapes ===================== */
+.boxes {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: fit-content;
+  gap: 20px;
+}
+.box {
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.box.visible {
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.box.hidden {
+  opacity: 0;
+  cursor: initial;
+}
+
+.box.selected {
+  background: #0bcc59;
+  cursor: not-allowed;
+}

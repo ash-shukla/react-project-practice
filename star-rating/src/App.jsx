@@ -1,10 +1,12 @@
 import "./App.css";
-import StarComponent from "./StarComponent";
+import Todo from "./Todo";
+// import StarComponent from "./StarComponent";
 
 function App() {
   return (
     <>
-      <StarComponent />
+      {/* <StarComponent /> */}
+      <Todo />
     </>
   );
 }
