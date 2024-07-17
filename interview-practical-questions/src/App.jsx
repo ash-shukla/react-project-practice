@@ -4,6 +4,7 @@ import BarChart from "./BarChart";
 import CHART_DATA from "./data";
 import Sidebar from "./tree-structure/Sidebar";
 import Shape from "./interactive-shape/Shape";
+import DataTable from "./dataTable/DataTable";
 
 function App() {
   const [showChart, setShowChart] = useState(false);
@@ -22,7 +23,10 @@ function App() {
       {/* <Sidebar /> */}
       {/* ---------------------------------------------------------- */}
       {/* Interactive Shape */}
-      <Shape />
+      {/* <Shape /> */}
+      {/* ---------------------------------------------------------- */}
+      {/* Data Table */}
+      <DataTable />
     </>
   );
 }

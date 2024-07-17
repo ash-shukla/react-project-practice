@@ -1,0 +1,14 @@
+#root {
+  max-width: 100vw;
+}
+
+.ant-table-wrapper .ant-table-thead > tr > th {
+  background: #00818a;
+  color: white;
+  font-size: 11px;
+}
+
+.ant-table-wrapper .ant-table-thead:hover > tr > th:hover {
+  background: #00818a;
+  color: white;
+}
